@@ -199,7 +199,9 @@
     "test:unit:watch": "NODE_ENV=jesttest BABEL_DISABLE_CACHE=1 jest --no-cache --watch",
     "test:integration": "NODE_ENV=jesttest BABEL_DISABLE_CACHE=1 jest --no-cache /tests/",
     "test:integration:watch": "NODE_ENV=jesttest BABEL_DISABLE_CACHE=1 jest --no-cache --watch /tests/",
-    "docs": "jsdoc . --configure .reaction/jsdoc/jsdoc.json --readme .reaction/jsdoc/templates/static/README.md"
+    "docs": "jsdoc . --configure .reaction/jsdoc/jsdoc.json --readme .reaction/jsdoc/templates/static/README.md",
+    "local": "TOOL_NODE_FLAGS='--max-old-space-size=2048' METEOR_DISABLE_OPTIMISTIC_CACHING=1 reaction",
+    "visualizer": "TOOL_NODE_FLAGS='--max-old-space-size=2048' METEOR_DISABLE_OPTIMISTIC_CACHING=1 meteor run --production --extra-packages bundle-visualizer"
   },
   "babel": {
     "plugins": [

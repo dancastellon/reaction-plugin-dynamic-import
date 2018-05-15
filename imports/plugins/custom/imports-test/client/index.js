@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Template } from 'meteor/templating';
-import ContentEditor from '../imports/ui/components/ContentEditor';
+import ContentEditor from '../components/ContentEditor';
 
 import './index.html';
 
